@@ -1,0 +1,12 @@
+{
+  "name": "is-bundling-for-browser-or-node",
+  "version": "1.0.0",
+  "description": "Uses package.json fields \"browser\" and \"main\" to check whether code is bundled for browser or node",
+  "main": "index-node.js",
+  "browser": "index-browser.js",
+  "scripts": {
+    "test": "node ./test.mjs"
+  },
+  "author": "Lasse Boisen Andersen <la@laander.com>",
+  "license": "MIT"
+}
