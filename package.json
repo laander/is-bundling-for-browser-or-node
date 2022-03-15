@@ -1,9 +1,16 @@
 {
   "name": "is-bundling-for-browser-or-node",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Uses package.json fields \"browser\" and \"main\" to check whether code is bundled for browser or node",
   "main": "index-node.js",
   "browser": "index-browser.js",
+  "exports": {
+    ".": {
+      "node": "./index-es-node.js",
+      "browser": "./index-es-browser.js"
+    }
+  },
+  "types": "index.d.ts",
   "scripts": {
     "test": "node ./test.mjs"
   },
